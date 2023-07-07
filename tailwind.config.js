@@ -9,6 +9,8 @@ module.exports = {
         'accent-7': '#333',
         success: '#0070f3',
         cyan: '#79FFE1',
+        'bg-primary': '#1A1A1A',
+        'fnt-primary': '#FFFFFF',
       },
       spacing: {
         28: '7rem',
@@ -31,5 +33,6 @@ module.exports = {
       },
     },
   },
+  presets: ['@next/babel'],
   plugins: [],
 }
