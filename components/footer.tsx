@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
             <a
               href="https://www.linkedin.com/in/davidkube"
-              className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
+              className="mx-3 bg-bg-primary hover:bg-fnt-primary hover:text-bg-primary border border-bg-primary text-fnt-primary font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ const Footer = () => {
             </a>
             <a
               href={`https://twitch.tv/little__stranger`}
-              className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
+              className="mx-3 bg-bg-primary hover:bg-fnt-primary hover:text-bg-primary border border-bg-primary text-fnt-primary font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

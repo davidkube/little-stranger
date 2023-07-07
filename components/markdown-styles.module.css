@@ -16,3 +16,19 @@
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
 }
+
+.markdown img[alt$=">"] {
+  float: right;
+}
+
+.markdown img[alt$="<"] {
+  float: left;
+}
+
+.markdown img[alt$="><"] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  float: none!important;
+}

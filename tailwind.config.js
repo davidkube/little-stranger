@@ -10,7 +10,7 @@ module.exports = {
         success: '#0070f3',
         cyan: '#79FFE1',
         'bg-primary': '#1A1A1A',
-        'fnt-primary': '#FFFFFF',
+        'fnt-primary': '#EEEEEE',
       },
       spacing: {
         28: '7rem',

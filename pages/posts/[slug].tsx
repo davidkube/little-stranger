@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import Container from '../../components/container'
+import HomeButton from '../../components/homebutton'
 import PostBody from '../../components/post-body'
 import Header from '../../components/header'
 import PostHeader from '../../components/post-header'
@@ -8,7 +9,7 @@ import Layout from '../../components/layout'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
 import Head from 'next/head'
-import { CMS_NAME } from '../../lib/constants'
+import { BLOG_TITLE} from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
 
@@ -20,7 +21,7 @@ type Props = {
 
 export default function Post({ post, morePosts, preview }: Props) {
   const router = useRouter()
-  const title = `${post.title} | Next.js Blog Example with ${CMS_NAME}`
+  const title = `${post.title} | ${BLOG_TITLE}`
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
@@ -40,13 +41,16 @@ export default function Post({ post, morePosts, preview }: Props) {
               <PostHeader
                 title={post.title}
                 coverImage={post.coverImage}
-                date={post.date}
+                timestamp={post.timestamp}
                 author={post.author}
               />
               <PostBody content={post.content} />
+              <HomeButton/>
             </article>
+                
           </>
         )}
+        
       </Container>
     </Layout>
   )
@@ -62,6 +66,7 @@ export async function getStaticProps({ params }: Params) {
   const post = getPostBySlug(params.slug, [
     'title',
     'date',
+    'timestamp',
     'slug',
     'author',
     'content',
