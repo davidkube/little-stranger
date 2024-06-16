@@ -1,13 +1,13 @@
 ---
-title: humility
-excerpt: o death, where is your sting?
-coverImage: /assets/img/0006/0006.jpg
-date: 2023-06-17
-timestamp: precipice
+title: 'humility'
+excerpt: 'o death, where is your sting?'
+coverImage: '/assets/img/0006/0006.jpg'
+date: '2023-06-17'
+timestamp: 'precipice'
 author: 'david__kube'
-name: david__kube
-picture: /assets/img/ffd.PNG
-url: /assets/img/0006/0006.jpg
+name: 'david__kube'
+picture: '/assets/img/ffd.PNG'
+url: '/assets/img/0006/0006.jpg'
 ---
 it's interesting
 
