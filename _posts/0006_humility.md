@@ -2,7 +2,7 @@
 title: 'humility'
 excerpt: 'o death, where is your sting?'
 coverImage: '/assets/img/0006/0006.jpg'
-date: '2023-06-17'
+date: '2024-06-17'
 timestamp: 'precipice'
 author: 'david__kube'
 name: 'david__kube'
